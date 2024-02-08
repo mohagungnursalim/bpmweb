@@ -106,7 +106,7 @@ Anda mencari <kbd style="background-color: rgba(134, 160, 134, 0.808)"> "{{ requ
                         x</small></td>
                 <td class="text-dark">
 
-                    <small class="text-muted"><i class="far fa-clock fa-sm"></i>
+                    <small class="text-muted"><i class="far fa-calendar fa-sm"></i>
                         {{ Carbon\Carbon::parse($post->created_at)->format('d M,Y') }}
                     </small>
 
@@ -119,10 +119,15 @@ Anda mencari <kbd style="background-color: rgba(134, 160, 134, 0.808)"> "{{ requ
                     @else
                     {{-- <small>No publishing</small> --}}
 
+                    @if (Auth::user()->is_admin == true)
+                    @if ($post->moderasi == 'Setujui')
                     <button type="button" class="btn btn-primary" style="border-radius:23px;" data-toggle="modal"
-                        data-target="#exampleModal{{ $post->id }}">
-                        <i class="fa fa-upload" aria- hidden="true"></i> Publish
+                    data-target="#exampleModal{{ $post->id }}">
+                    <i class="fa fa-upload" aria- hidden="true"></i> Publish
                     </button>
+                    @endif
+                    @endif
+                    <span class="badge badge-pill bg-secondary text-white">Menunggu Persetujuan</span>
                     @endif
 
                 </td>
