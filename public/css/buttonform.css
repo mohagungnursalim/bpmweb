@@ -1,0 +1,64 @@
+@import "compass/css3";
+
+@mixin button() {
+	margin: 0;
+	display: inline-block;
+	padding: 10px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: -1px 0px 1px #7db9e8;
+	border: solid 1px #fff;
+	border-radius: 5px;
+	background: #7db9e8;
+  color: #fff;
+	transition: all 75ms linear;
+
+	&:hover {
+		text-decoration: none; 
+		color: #fff;
+		background: #91cefe;
+		text-shadow: -1px 0px 1px #91cefe;
+	}
+	&:active {
+		background-color: #2c3f5a;
+		background: linear-gradient(top, #1b2738, #2c3f5a);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b2738', endColorstr='#2c3f5a');
+	}
+	&:disabled {
+		cursor: default;
+		background: #ddd;
+		text-shadow: -1px 0px 1px #bbb;
+	}
+}
+
+@keyframes spin {
+	from { 
+		transform: rotate(0deg);
+	}
+	to { 
+		transform: rotate(360deg);
+	}
+}
+
+input[type=submit] {
+  @include button();
+	width: 147px;
+	height: 40px;
+	$dur: .4s;
+
+	transition: all $dur linear;
+
+	&.uploading {
+		text-indent: -9999px;
+		padding: 0;
+		width: 40px; 
+		height: 40px; 
+		background: transparent; 
+		border: 2px solid #7db9e8; 
+		border-right-color: transparent; 
+		border-radius: 50%;
+		animation: spin 1s $dur infinite linear;
+	}
+}

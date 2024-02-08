@@ -1,0 +1,134 @@
+.box div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgb(208, 225, 240);
+
+}
+
+.box div:nth-child(1) {
+    top: 16%;
+    left: 42%;
+    animation: animate 8s linear infinite;
+}
+
+.box div:nth-child(2) {
+    top: 6%;
+    left: 50%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 6s linear infinite;
+}
+
+
+.box div:nth-child(4) {
+    top: 38%;
+    left: 12%;
+    animation: animate 4s linear infinite;
+}
+
+
+.box div:nth-child(5) {
+    top: 45%;
+    left: 78%;
+    animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6) {
+    top: 70%;
+    left: 89%;
+    animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(7) {
+    top: 90%;
+    left: 80%;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+/* ---------------------------------------------------- */
+
+
+.message {
+    background-color: yellow;
+    color: #333;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 270px;
+    animation: openclose 5s ease-in-out infinite;
+}
+
+.word1,
+.word2,
+.word3 {
+    font-family: tahoma;
+}
+
+
+
+
+/* text mengetik */
+#typing {
+    width: auto;
+    color: #676767;
+    float: left;
+    font-size: 50px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(24) 1s infinite;
+}
+
+#typing span {
+    color: #000000;
+}
+
+#crow {
+    float: left;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 50px;
+    
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 700px;
+    }
+}
+
+@keyframes crow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
