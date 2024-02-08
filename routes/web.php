@@ -53,7 +53,7 @@ Route::get('/template', [SendmailController::class, 'template']);
 
 // ---------------------------------|| Sitemap Route || ------------------------------//
 
-Route::get('sitemap',function(){
+Route::get('sitemap',function(Request $request){
     $site = App::make('sitemap');
     $site->add(URL::to('/'),date("Y-m-d h:i:s"),1,'daily');
     $site->add(URL::to('/artikel'),date("Y-m-d h:i:s"),1,'daily');
@@ -83,7 +83,11 @@ Route::get('sitemap',function(){
         $site->add(URL::to('/artikel?tag='. $tag->slug),$tag->created_at,1,'daily');
     }
     // store to xml
+
+    
     $site->store('xml','sitemap');
+   
+    return redirect('/dashboard/posts')->with('message', 'Request sitemap berhasil!');
 });
 
 // --------------------------------|| end Sitemap || ----------------------------------//

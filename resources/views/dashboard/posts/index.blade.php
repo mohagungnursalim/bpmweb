@@ -35,6 +35,22 @@
     class="fas fa-pencil fa-sm"></i> Mulai Menulis</a>
 @endif
 <a href="/dashboard/posts" class="btn btn-dark mb-3">🔄️Refresh</a>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#requestModal">
+    Request Sitemap
+</button>
+  
+@if (session('message'))
+    <div class="alert alert-success" id="messageAlert">
+        {{ session('message') }}
+    </div>
+    <script>
+        // Menghilangkan pesan setelah 2 detik
+        setTimeout(function() {
+            document.getElementById('messageAlert').style.display = 'none';
+        }, 1500);
+    </script>
+@endif
 
 
 {{-- @if (request('search'))
@@ -430,6 +446,33 @@ Anda mencari <kbd style="background-color: rgba(134, 160, 134, 0.808)"> "{{ requ
 </div>
 
 
+ <!-- Modal Request Sitemap-->
+ <div class="modal fade" id="requestModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Request Sitemap</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Sitemap adalah ‘map’ atau peta yang menjabarkan setiap halaman di website Anda. Peta ini bukanlah sekedar elemen navigasi yang ditampilkan di bawah bagian header. Sitemap dibuat dalam format XML (Extensible Markup Language) dan digunakan oleh AI untuk mempermudah indexing website.
+            <br><br>
+            Mesin pencari seperti Google menggunakan sitemap XML untuk menyimpan halaman web secara lebih efisien, sehingga memberikan hasil yang lebih baik bagi pengguna saat menelusuri istilah terkait.
+        </div>
+        <form method="get" action="/sitemap">
+        <div class="text-center mb-3">
+            <button type="submit" class="btn btn-primary">Proses</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </form>
+      </div>
+    </div>
+  </div>
+
+
+ 
 @endforeach
 
 @endsection

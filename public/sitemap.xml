@@ -4,91 +4,67 @@
 	<url>
 	<loc>http://bpmweb.test</loc>
 		<priority>1</priority>
-		<lastmod>2024-02-05T12:59:18+07:00</lastmod>
+		<lastmod>2024-02-08T12:49:37+07:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
 	<loc>http://bpmweb.test/artikel</loc>
 		<priority>1</priority>
-		<lastmod>2024-02-05T12:59:18+07:00</lastmod>
+		<lastmod>2024-02-08T12:49:37+07:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
 	<loc>http://bpmweb.test/topik</loc>
 		<priority>1</priority>
-		<lastmod>2024-02-05T12:59:18+07:00</lastmod>
+		<lastmod>2024-02-08T12:49:37+07:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
 	<loc>http://bpmweb.test/kontak</loc>
 		<priority>1</priority>
-		<lastmod>2024-02-05T12:59:18+07:00</lastmod>
+		<lastmod>2024-02-08T12:49:37+07:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
 	<loc>http://bpmweb.test/tentang-kami</loc>
 		<priority>1</priority>
-		<lastmod>2024-02-05T12:59:18+07:00</lastmod>
+		<lastmod>2024-02-08T12:49:37+07:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
 	<loc>http://bpmweb.test/daftar-author</loc>
 		<priority>1</priority>
-		<lastmod>2024-02-05T12:59:18+07:00</lastmod>
+		<lastmod>2024-02-08T12:49:37+07:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
 	<loc>http://bpmweb.test/privacy-policy</loc>
 		<priority>1</priority>
-		<lastmod>2024-02-05T12:59:18+07:00</lastmod>
+		<lastmod>2024-02-08T12:49:37+07:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
 	<loc>http://bpmweb.test/terms</loc>
 		<priority>1</priority>
-		<lastmod>2024-02-05T12:59:18+07:00</lastmod>
+		<lastmod>2024-02-08T12:49:37+07:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://bpmweb.test/artikel/politik-dinasti-sang-presiden-merusak-tatanan-bernegara</loc>
+	<loc>http://bpmweb.test/artikel/wisata-literasi-baca-lintas-desa-melukis-senyum-generasi-gemilang</loc>
 		<priority>1</priority>
-		<lastmod>2024-01-21T12:04:49+07:00</lastmod>
+		<lastmod>2024-02-08T11:31:55+07:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://bpmweb.test/artikel/test-postingan-hehehe</loc>
+	<loc>http://bpmweb.test/artikel?search=wisata-literasi-baca-lintas-desa-melukis-senyum-generasi-gemilang</loc>
 		<priority>1</priority>
-		<lastmod>2024-01-21T14:55:21+07:00</lastmod>
+		<lastmod>2024-02-08T11:31:55+07:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://bpmweb.test/artikel/ini-adalah-tulisan-ashari-tentang-jurnal-pembangunan-ekonomi-dan-keuangan-daerah</loc>
+	<loc>http://bpmweb.test/artikel?category=sosial</loc>
 		<priority>1</priority>
-		<lastmod>2024-01-25T13:35:55+07:00</lastmod>
-		<changefreq>daily</changefreq>
-	</url>
-	<url>
-	<loc>http://bpmweb.test/artikel?search=politik-dinasti-sang-presiden-merusak-tatanan-bernegara</loc>
-		<priority>1</priority>
-		<lastmod>2024-01-21T12:04:49+07:00</lastmod>
-		<changefreq>daily</changefreq>
-	</url>
-	<url>
-	<loc>http://bpmweb.test/artikel?search=test-postingan-hehehe</loc>
-		<priority>1</priority>
-		<lastmod>2024-01-21T14:55:21+07:00</lastmod>
-		<changefreq>daily</changefreq>
-	</url>
-	<url>
-	<loc>http://bpmweb.test/artikel?search=ini-adalah-tulisan-ashari-tentang-jurnal-pembangunan-ekonomi-dan-keuangan-daerah</loc>
-		<priority>1</priority>
-		<lastmod>2024-01-25T13:35:55+07:00</lastmod>
-		<changefreq>daily</changefreq>
-	</url>
-	<url>
-	<loc>http://bpmweb.test/artikel?category=test-image</loc>
-		<priority>1</priority>
-		<lastmod>2024-02-05T12:56:37+07:00</lastmod>
+		<lastmod>2024-02-08T11:24:48+07:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
@@ -101,6 +77,12 @@
 	<loc>http://bpmweb.test/artikel?tag=nepotisme</loc>
 		<priority>1</priority>
 		<lastmod>2024-01-24T09:49:59+07:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://bpmweb.test/artikel?tag=sosial</loc>
+		<priority>1</priority>
+		<lastmod>2024-02-08T11:25:15+07:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 </urlset>
