@@ -23,7 +23,7 @@
 
 <div class="container">
     <form action="/artikel" class="row g-3">
-        <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"> <!-- Mengatur lebar form sesuai ukuran layar -->
+        <div class="col-lg-4 col-md-8 col-sm-10 col-12 mx-auto"> <!-- Mengatur lebar form sesuai ukuran layar -->
             <div class="input-group">
                 <input type="text" class="form-control" value="{{request('search')}}" placeholder="Cari Artikel.." name="search">
                 <button style="background-color: rgb(31, 64, 124); color:white;" type="submit" class="btn btn-primary"><i class="fas fa-search fa-sm"></i></button>
