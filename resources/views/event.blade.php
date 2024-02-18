@@ -15,19 +15,18 @@
 </div>
 <div class="container">
   
-    @foreach ($events as $event)
-    <div class="card">
-        <a href="/event/{{$event->slug}}">
-        <div class="card-body">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">#{{ $event->nama }}</li>
-            
-          </ul>
-        </div>
-        </a>
-      
-    </div>
-    @endforeach
+  @foreach ($events as $event)
+  <div class="card">
+      <a href="/event/{{$event->slug}}" style="text-decoration-color: #fe9800;">
+          <div class="card-body">
+              <ul class="list-group list-group-flush" style="color: #fe9800;">
+                  <li class="list-group-item">#{{ $event->nama }}</li>
+              </ul>
+          </div>
+      </a>
+  </div>
+  @endforeach
+  
 </div>
 
 

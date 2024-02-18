@@ -19,13 +19,15 @@
       @foreach ($categories as $category)
       <div class="col-md-3 mb-3 mt-4 d-flex align-self-stretch ">
         <a href="/artikel?category={{ $category->slug }}" class="text-dark">
-     <div class="card" style="width: 18rem;">
+     <div class="card" style="width: 18rem; text-decoration-color: #fe9800;">
          @if ($category->image)
         <img src="{{ asset('storage/' .$category->image) }}" width="150px" height="135px" class="card-img-top" alt="{{ $category->name }}">
         @else
         @endif
         <div class="card-body">
-         <h5 class="card-title">{{ $category->name }}</h5>
+        <u style="color: orange;">
+          <h5 class="card-title">{{ $category->name }}</h5>
+        </u> 
           
         
      </div>
