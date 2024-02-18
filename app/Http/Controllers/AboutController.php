@@ -11,10 +11,6 @@ class AboutController extends Controller
     {
 
         $title = "Tentang Kami";
-
-        $response = Http::get('https://api.github.com/users/mohagungnursalim/repos');
-        $datas = $response->json();
-        
-        return view('/about',compact('datas','title'));
+        return view('about',compact('title'));
     }
 }
