@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   @endsection
  
+</head>
 <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
 <section class="pt-7">
   <div class="container">
@@ -73,14 +74,29 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6 text-center">
-        <h1 class="fw-bold mb-4 fs-7">Jadi bagian dari Kami?</h1>
-        <p class="mb-5 text-info fw-medium">"Gabunglah dengan kami dan bentuk perubahan. Bersama, kita bisa menjadi kekuatan yang mendorong kreativitas, keberagaman, dan ketahanan di antara mahasiswa."
+        <h1 class="fw-bold mb-4 fs-7">Event terbaru</h1>
 
-        </p>
-        <button class="btn btn-warning btn-md">Lihat</button>
       </div>
     </div>
   </div><!-- end of .container-->
+
+  <div class="container">
+  
+    @foreach ($events as $event)
+    <div class="card">
+        <a href="/event/{{$event->slug}}">
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">#{{$loop->iteration}} {{ $event->nama }}</li>
+            
+          </ul>
+        </div>
+        </a>
+      
+    </div>
+    @endforeach
+</div>
+
 
 </section>
 <!-- <section> close ============================-->

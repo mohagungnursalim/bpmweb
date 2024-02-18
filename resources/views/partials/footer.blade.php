@@ -10,7 +10,7 @@
           </div>
           <div class="col-12 col-md-auto">
             <p class="mb-0">
-              Made with ❤️&🎵 </p>
+              Made with ❤️&🎵 Designed By:<a href="https://themewagon.com/">ThemeWagon</a></p>
           </div>
         </div>
       </div>
