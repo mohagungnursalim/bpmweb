@@ -5,7 +5,7 @@
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
        
         <div class="sidebar-brand-text mx-2">
-            <h4>BPM Dashboard</h4>
+            <img src="{{asset('logo/logobpm2.png')}}" height="80" alt="">
         </div>
     </a>
     <!-- Divider -->
