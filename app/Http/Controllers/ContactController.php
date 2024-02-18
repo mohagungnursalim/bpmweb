@@ -71,19 +71,17 @@ class ContactController extends Controller
     public function update(Request $request, Contact $contact)
     {
         $rules = [
-
             'is_read' => 'required|max:1'
         ];
-
+    
         $validatedData = $request->validate($rules);
-
-      
-
+    
         Contact::where('id', $contact->id)
-
             ->update($validatedData);
-
-        $request->session(Alert::success('success', 'Pesan ditandai telah terbaca!'));
+    
+        // Tambahkan pesan sukses ke sesi
+        $request->session()->flash('success', 'Pesan ditandai telah terbaca!');
+    
         return redirect('/dashboard/pesanmasuk');
     }
 
