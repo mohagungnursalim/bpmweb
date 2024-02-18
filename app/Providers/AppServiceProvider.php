@@ -38,7 +38,7 @@ class AppServiceProvider extends ServiceProvider
         //  mengambil 6 notif 
         View::share('notif', Contact::latest()->take(6)->get());
         // data tentang-bpm
-        View::share('tentangs', Tentang::latest()->take(1)->get());
+        // View::share('tentangs', Tentang::latest()->take(1)->get());
 
         // View::share('isread', Contact::all());
         // // tier
