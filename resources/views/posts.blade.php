@@ -19,28 +19,29 @@
 
 </style>
 <h2 class="mb-2 mt-3 text-center">{{ $title }} </h2>
-<div class="text-center">
-    <form action="/artikel"
-    class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-    
-    <div class="input-group">
-        <input type="text" value="{{ request('search') }}" name="search"
-            class="form-control bg-light border-0 small" placeholder="Cari Artikel.." aria-label="Search"
-            aria-describedby="basic-addon2">
-        <div class="input-group-append">
-            <button class="btn btn" style="background-color: rgb(31, 64, 124); color:white;" type="submit">
-                <i class="fas fa-search fa-sm"></i>
-            </button>
-        </div>
-    </div>
-</form>
-    @if (request('search'))
-    <br>
-    Anda mencari <kbd class="text-white" style="background-color: rgb(31, 64, 124)">
-        "{{ request('search') }}"</kbd>
 
-    @endif
+
+<div class="container">
+    <form action="/artikel" class="row g-3">
+        <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"> <!-- Mengatur lebar form sesuai ukuran layar -->
+            <div class="input-group">
+                <input type="text" class="form-control" value="{{request('search')}}" placeholder="Cari Artikel.." name="search">
+                <button style="background-color: rgb(31, 64, 124); color:white;" type="submit" class="btn btn-primary"><i class="fas fa-search fa-sm"></i></button>
+            </div>
+        </div>
+    </form>
 </div>
+
+<div class="text-center">
+    @if (request('search'))
+<br>
+Anda mencari <kbd class="text-white" style="background-color: rgb(31, 64, 124)">
+    "{{ request('search') }}"</kbd>
+
+@endif
+</div>
+
+
 
 
 
@@ -54,10 +55,11 @@
     <div class="row">
         @foreach ($posts as $post)
         <div class="col-md-4 mb-3 mt-4 d-flex align-self-stretch">
-          <a href="/artikel/{{$post->slug}}" class="text-decoration-none">
+            <a href="/artikel/{{$post->slug}}" class="text-decoration-none">
                 <div class="card">
                     @if ($post->image)
-                    <img src="{{ asset('storage/' . $post->image) }}" width="700px" height="220px" alt="{{ $post->title }}" class="card-img">
+                    <img src="{{ asset('storage/' . $post->image) }}" width="700px" height="220px"
+                        alt="{{ $post->title }}" class="card-img">
                     @endif
                     <div class="card-body">
                         <p class="card-text">
@@ -66,16 +68,16 @@
                             </small>
                         </p>
                         <h5 class="card-title">{{ $post->title }}</h5>
-                        
+
                     </div>
                 </div>
-              </a>
+            </a>
         </div>
         @endforeach
     </div>
 
     <div>
-        
+
     </div>
 
 </div>

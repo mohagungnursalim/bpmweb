@@ -15,7 +15,10 @@
       <div class="col-md-6 text-md-start text-center py-6">
         <h1 class="mb-4 fs-9 fw-bold" style="color: rgb(31, 64, 124)">BPM FT-UNTAD</h1>
         <p class="mb-6 lead text-bold"><b>Badan Pers Mahasiswa Fakultas Teknik <br>Universitas Tadulako</b></p>
-        <p class="mb-6 lead text-secondary">Inklusif,Efektif & Memberdayakan.</p>
+        <p class="mb-3 lead text-secondary">Inklusif,Efektif & Memberdayakan. </p>
+        <p>
+          Setiap suara didengar dan dihargai, di mana informasi mengalir secara transparan, dan di mana kolaborasi menghasilkan solusi yang inovatif.
+       </p>
         <div class="text-center text-md-start"><a class="btn btn-primary me-3 btn-lg" href="/artikel" role="button">Jelajahi </a></div>
       </div>
       <div class="col-md-6 text-end"><img class="pt-7 pt-md-0 img-fluid" src="{{asset('logo/logobpm2.png')}}" alt="" /></div>
@@ -67,7 +70,7 @@
 <!-- <section> begin ============================-->
 <section class="py-md-11 py-8" id="superhero">
 
-  <div class="bg-holder z-index--1 bottom-0 d-none d-lg-block background-position-top" style="background-image:url(assets/img/superhero/oval.png);opacity:.5; background-position: top !important ;">
+  <div class="bg-holder z-index--1 bottom-0 d-none d-lg-block background-position-top" style="">
   </div>
   <!--/.bg-holder-->
 
@@ -109,8 +112,11 @@
 <!-- <section> begin ============================-->
 <section class="pt-5" id="marketing">
 
-  <div class="container">
-    <h1 class="fw-bold fs-6 mb-3">Artikel Populer</h1>
+  <div class="container ">
+    <div class="text-center">
+      <h1 class="fw-bold fs-6 mb-4">Artikel Populer</h1>
+    </div>
+    
     
     <div class="row">
       @foreach ($posts as $post)
